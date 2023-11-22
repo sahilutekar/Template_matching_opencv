@@ -1,11 +1,11 @@
 import cv2
-image = cv2.imread("C:/Users/sahil/Desktop/template_matching/input/car.png")
+image = cv2.imread("/car.png")
 image_copy = image.copy()
 # Convert copy of image to Grayscale format as we need that
 # for template matching.
 image_copy = cv2.cvtColor(image_copy, cv2.COLOR_BGR2GRAY)
 # Read the template in grayscale format.
-template = cv2.imread("C:/Users/sahil/Desktop/template_matching/input/logo2.png", 0)
+template = cv2.imread("/logo2.png", 0)
 w, h = template.shape[::-1]
 
 # Apply template Matching.
